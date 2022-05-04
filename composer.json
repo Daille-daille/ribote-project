@@ -2,6 +2,7 @@
     "name": "daille-daille/ribote-project",
     "type": "project",
     "description": "Drupal project using the Ribote distribution",
+    "license": "GPL-2.0-or-later",
     "require": {
         "daille-daille/ribote": "*"
     },
@@ -10,9 +11,19 @@
     },
     "require-dev": {
         "drupal/core-composer-scaffold": "^9.3.12",
-        "drupal/core-dev": "^9.3.12"
+        "drupal/core-dev": "^9.3.12",
+        "symfony/dotenv": "^6.0"
     },
     "config": {
+        "allow-plugins": {
+            "wikimedia/composer-merge-plugin": true,
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true,
+            "drupal/console-extend-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
         "sort-packages": true
     },
     "extra": {
