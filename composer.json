@@ -10,9 +10,9 @@
         "drupal/drupal": "*"
     },
     "require-dev": {
-        "drupal/core-composer-scaffold": "^9.3.12",
-        "drupal/core-dev": "^9.3.12",
-        "vlucas/phpdotenv": "^5.4"
+        "drupal/core-composer-scaffold": "^10.0",
+        "drupal/core-dev": "^10.0",
+        "vlucas/phpdotenv": "^5.5"
     },
     "config": {
         "allow-plugins": {
@@ -70,16 +70,11 @@
             "npm-asset",
             "bower-asset"
         ],
-        "merge-plugin": {
-            "include": [
-                "web/modules/contrib/webform/composer.libraries.json"
-            ]
-        },
         "patchLevel": {
             "drupal/core": "-p2"
         }
     },
-    "autoload-dev": {
+    "autoload": {
         "files": [
             "load.environment.php"
         ]
