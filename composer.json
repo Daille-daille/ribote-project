@@ -1,18 +1,35 @@
 {
     "name": "daille-daille/ribote-project",
-    "type": "project",
     "description": "Drupal project using the Ribote distribution",
     "license": "GPL-2.0-or-later",
+    "type": "project",
     "require": {
         "daille-daille/ribote": "*"
-    },
-    "conflict": {
-        "drupal/drupal": "*"
     },
     "require-dev": {
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-dev": "^10.0",
         "vlucas/phpdotenv": "^5.5"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "files": [
+            "load.environment.php"
+        ]
     },
     "config": {
         "allow-plugins": {
@@ -73,22 +90,5 @@
         "patchLevel": {
             "drupal/core": "-p2"
         }
-    },
-    "autoload": {
-        "files": [
-            "load.environment.php"
-        ]
-    },
-    "repositories": {
-        "drupal": {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        "assets": {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
