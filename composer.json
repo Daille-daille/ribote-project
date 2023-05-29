@@ -33,13 +33,12 @@
     },
     "config": {
         "allow-plugins": {
-            "wikimedia/composer-merge-plugin": true,
             "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true,
             "oomphinc/composer-installers-extender": true,
-            "drupal/console-extend-plugin": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "phpstan/extension-installer": true,
+            "drupal/core-composer-scaffold": true
         },
         "sort-packages": true
     },
@@ -52,7 +51,7 @@
             ],
             "file-mapping": {
                 "[web-root]/robots.txt": {
-                    "append": "robots-append.txt"
+                    "append": "scaffold/append.robots.txt"
                 }
             },
             "gitignore": false,
