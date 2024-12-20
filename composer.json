@@ -7,8 +7,8 @@
         "daille-daille/ribote": "*"
     },
     "require-dev": {
-        "drupal/core-composer-scaffold": "^10.0",
-        "drupal/core-dev": "^10.0",
+        "drupal/core-composer-scaffold": "^11.0",
+        "drupal/core-dev": "^11.0",
         "vlucas/phpdotenv": "^5.5"
     },
     "conflict": {
